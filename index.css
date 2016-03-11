@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Press Start';
+  src: url('Fonts/pressstart2p-webfont.eot');
+  src: url('Fonts/pressstart2p-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/pressstart2p-webfont.woff') format('woff'),
+       url('Fonts/pressstart2p-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #5C94FC;
+  font-family: 'Press Start';
+  color: white;
+}
+
+.name, .subtitle {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+.name {
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+.subtitle {
+  margin-top: 10px;
+}
+
+#game {
+  position: absolute;
+  bottom: 0;
+}
