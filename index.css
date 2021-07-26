@@ -41,7 +41,7 @@ html, body {
 }
 
 #play-button {
-  display: inline-block;
+  display: none;
   margin-top: 50px;
   cursor: pointer;
   padding: 20px;
