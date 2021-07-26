@@ -16,7 +16,7 @@ html, body {
   color: white;
 }
 
-.name, .subtitle {
+.name, .subtitle, #play-button {
   z-index: 1;
   position: relative;
   text-align: center;
@@ -34,4 +34,17 @@ html, body {
 #game {
   position: absolute;
   bottom: 0;
+}
+
+#button-container {
+  text-align: center;
+}
+
+#play-button {
+  display: inline-block;
+  margin-top: 50px;
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 2px;
 }

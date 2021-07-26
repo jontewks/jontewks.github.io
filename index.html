@@ -11,6 +11,29 @@
 <body>
     <div class="name">Jon Tewksbury</div>
     <div class="subtitle">software engineer</div>
+
+    <audio volumereal="1" used="1" name="Overworld" loop autoplay id="audio">
+        <source type="audio/mp3" src="Sounds/Themes/mp3/Overworld.mp3">
+    </audio>
+
+    <div id="button-container">
+        <div id="play-button">Play background music</div>
+    </div>
+    <script>
+        var button = document.getElementById('play-button')
+        var audio = document.getElementById('audio')
+
+        button.addEventListener('click', function() {
+            audio.play()
+        });
+
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden){
+                audio.pause()
+            }  
+        })
+    </script>
+    
     <section id="game"></section>
     <script src="min.js" type="text/javascript"></script>
 </body>
